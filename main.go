@@ -7,6 +7,7 @@ import (
 	"net/http/httputil"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -20,6 +21,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 	log.Println("Request")
 	fmt.Println(string(content))
+	fmt.Println(strings.Repeat("-", 80))
 }
 
 func main() {
