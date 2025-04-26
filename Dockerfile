@@ -15,10 +15,7 @@ RUN make build
 
 FROM scratch
 
-ENV PORT=80
-
 COPY --from=builder /app/http-pong /http-pong
 
 ENTRYPOINT ["/http-pong"]
 EXPOSE 80
-
