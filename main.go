@@ -25,7 +25,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	port, _ := strconv.Atoi(os.Getenv("PORT"))
 	if port == 0 {
-		port = 8080
+		port = 80
 	}
 
 	http.HandleFunc("/", handler)
