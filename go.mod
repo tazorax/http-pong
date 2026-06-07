@@ -1,3 +1,3 @@
 module github.com/tazorax/http-pong
 
-go 1.25
+go 1.26
